@@ -10,9 +10,12 @@ import SwiftUI
 struct ButtonView: View {
     let width: CGFloat
     let height: CGFloat
+    let action: () -> Void
+    let label: String
+    
     var body: some View {
-        Button(action: changeLight) {
-            Text("START")
+        Button(action: action) {
+            Text(label)
                 .foregroundStyle(.white)
                 .font(.title)
                 .fontWeight(.bold)
@@ -26,10 +29,8 @@ struct ButtonView: View {
         .frame(width: width, height: height)
         .overlay(Capsule().stroke(.white, lineWidth: 4))
     }
-    
-    private func changeLight() {}
 }
 
-#Preview {
-    ButtonView(width: 150, height: 70)
-}
+//#Preview {
+//    ButtonView(width: 150, height: 70)
+//}
