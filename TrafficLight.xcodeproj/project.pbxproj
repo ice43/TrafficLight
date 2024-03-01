@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD2F84302B91CC5C005BC266 /* TrafficCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F842F2B91CC5C005BC266 /* TrafficCircleView.swift */; };
+		CD2F84322B91D149005BC266 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F84312B91D149005BC266 /* ButtonView.swift */; };
 		CD9B13AA2B90BCFC001F27DF /* TrafficLightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9B13A92B90BCFC001F27DF /* TrafficLightApp.swift */; };
 		CD9B13AC2B90BCFC001F27DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9B13AB2B90BCFC001F27DF /* ContentView.swift */; };
 		CD9B13AE2B90BCFD001F27DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9B13AD2B90BCFD001F27DF /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD2F842F2B91CC5C005BC266 /* TrafficCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficCircleView.swift; sourceTree = "<group>"; };
+		CD2F84312B91D149005BC266 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		CD9B13A62B90BCFC001F27DF /* TrafficLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9B13A92B90BCFC001F27DF /* TrafficLightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightApp.swift; sourceTree = "<group>"; };
 		CD9B13AB2B90BCFC001F27DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				CD9B13A92B90BCFC001F27DF /* TrafficLightApp.swift */,
 				CD9B13AB2B90BCFC001F27DF /* ContentView.swift */,
+				CD2F842F2B91CC5C005BC266 /* TrafficCircleView.swift */,
+				CD2F84312B91D149005BC266 /* ButtonView.swift */,
 				CD9B13AD2B90BCFD001F27DF /* Assets.xcassets */,
 				CD9B13AF2B90BCFD001F27DF /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2F84302B91CC5C005BC266 /* TrafficCircleView.swift in Sources */,
 				CD9B13AC2B90BCFC001F27DF /* ContentView.swift in Sources */,
+				CD2F84322B91D149005BC266 /* ButtonView.swift in Sources */,
 				CD9B13AA2B90BCFC001F27DF /* TrafficLightApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
