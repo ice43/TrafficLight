@@ -31,6 +31,6 @@ struct ButtonView: View {
     }
 }
 
-//#Preview {
-//    ButtonView(width: 150, height: 70)
-//}
+#Preview {
+    ButtonView(width: 150, height: 70, action: {}, label: "START")
+}

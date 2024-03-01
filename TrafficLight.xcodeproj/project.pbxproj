@@ -55,11 +55,9 @@
 		CD9B13A82B90BCFC001F27DF /* TrafficLight */ = {
 			isa = PBXGroup;
 			children = (
-				CD9B13A92B90BCFC001F27DF /* TrafficLightApp.swift */,
-				CD9B13AB2B90BCFC001F27DF /* ContentView.swift */,
-				CD2F842F2B91CC5C005BC266 /* TrafficCircleView.swift */,
-				CD2F84312B91D149005BC266 /* ButtonView.swift */,
-				CD9B13AD2B90BCFD001F27DF /* Assets.xcassets */,
+				CDA3E1642B91FE2900F9F6C4 /* App */,
+				CDA3E1652B91FE3300F9F6C4 /* Views */,
+				CDA3E1632B91FCB900F9F6C4 /* Resources */,
 				CD9B13AF2B90BCFD001F27DF /* Preview Content */,
 			);
 			path = TrafficLight;
@@ -71,6 +69,32 @@
 				CD9B13B02B90BCFD001F27DF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CDA3E1632B91FCB900F9F6C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD9B13AD2B90BCFD001F27DF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CDA3E1642B91FE2900F9F6C4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CD9B13A92B90BCFC001F27DF /* TrafficLightApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CDA3E1652B91FE3300F9F6C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD9B13AB2B90BCFC001F27DF /* ContentView.swift */,
+				CD2F842F2B91CC5C005BC266 /* TrafficCircleView.swift */,
+				CD2F84312B91D149005BC266 /* ButtonView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +313,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +348,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
