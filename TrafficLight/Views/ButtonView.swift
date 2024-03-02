@@ -17,6 +17,7 @@ struct ButtonView: View {
         Button(action: action) {
             Text(label)
                 .foregroundStyle(.white)
+                .frame(width: width, height: height)
                 .font(.title)
                 .fontWeight(.bold)
         }
