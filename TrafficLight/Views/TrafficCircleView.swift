@@ -9,7 +9,8 @@ import SwiftUI
 
 struct TrafficCircleView: View {
     let color: Color
-    let opacity: CGFloat
+    let opacity: Double
+    
     var body: some View {
         Circle()
             .foregroundStyle(color)

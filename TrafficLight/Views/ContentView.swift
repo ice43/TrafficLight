@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var lightYellow = 0.3
     @State private var lightGreen = 0.3
     @State private var buttonLabel = "START"
+    
     private let isOn = 1.0
     private let isOff = 0.3
     
@@ -27,8 +28,8 @@ struct ContentView: View {
             ButtonView(
                 width: 150,
                 height: 70,
-                action: changeLight,
-                label: buttonLabel
+                label: buttonLabel,
+                action: changeLight
             )
         }
         .padding()
@@ -56,7 +57,7 @@ struct ContentView: View {
     }
 }
 
-extension ContentView {
+private extension ContentView {
     enum CurrentLight {
         case red, yellow, green
     }

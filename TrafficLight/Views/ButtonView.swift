@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ButtonView: View {
-    let width: CGFloat
-    let height: CGFloat
-    let action: () -> Void
+    let width: Double
+    let height: Double
     let label: String
+    let action: () -> Void
     
     var body: some View {
         Button(action: action) {
@@ -32,5 +32,5 @@ struct ButtonView: View {
 }
 
 #Preview {
-    ButtonView(width: 150, height: 70, action: {}, label: "START")
+    ButtonView(width: 150, height: 70, label: "START", action: {})
 }
