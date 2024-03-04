@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct ButtonView: View {
-    let width: Double
-    let height: Double
     let label: String
     let action: () -> Void
     
@@ -17,21 +15,18 @@ struct ButtonView: View {
         Button(action: action) {
             Text(label)
                 .foregroundStyle(.white)
-                .frame(width: width, height: height)
+                .frame(width: 150, height: 70)
                 .font(.title)
                 .fontWeight(.bold)
         }
         .background {
             Capsule()
-                .frame(width: width, height: height)
                 .foregroundStyle(.tint)
         }
-        
-        .frame(width: width, height: height)
         .overlay(Capsule().stroke(.white, lineWidth: 4))
     }
 }
 
 #Preview {
-    ButtonView(width: 150, height: 70, label: "START", action: {})
+    ButtonView(label: "START", action: {})
 }

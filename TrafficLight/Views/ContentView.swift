@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var currentLight = CurrentLight.red
+    @State private var buttonLabel = "START"
+    
     @State private var lightRed = 0.3
     @State private var lightYellow = 0.3
     @State private var lightGreen = 0.3
-    @State private var buttonLabel = "START"
     
-    private let isOn = 1.0
-    private let isOff = 0.3
+    @State private var currentLight = CurrentLight.red
     
     var body: some View {
         VStack(spacing: 20) {
@@ -25,20 +24,20 @@ struct ContentView: View {
 
             Spacer()
             
-            ButtonView(
-                width: 150,
-                height: 70,
-                label: buttonLabel,
-                action: changeLight
-            )
+            ButtonView(label: buttonLabel) {
+                if buttonLabel == "START" {
+                    buttonLabel = "NEXT"
+                }
+                changeLight()
+            }
+            
         }
         .padding()
     }
     
     private func changeLight() {
-        if buttonLabel == "START" {
-            buttonLabel = "NEXT"
-        }
+        let isOn = 1.0
+        let isOff = 0.3
         
         switch currentLight {
         case .red:

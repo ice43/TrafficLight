@@ -15,7 +15,7 @@ struct TrafficCircleView: View {
         Circle()
             .foregroundStyle(color)
             .opacity(opacity)
-            .frame(width: 100, height: 100)
+            .frame(width: 100)
             .overlay(Circle().stroke(.white, lineWidth: 4))
     }
 }
